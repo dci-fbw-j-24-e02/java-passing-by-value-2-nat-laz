@@ -9,11 +9,12 @@ public class Main {
         int value = scanner.nextInt();
 
         main.increment(value);
-        System.out.println("original value: " + value);
+        System.out.println("original value in the main method: " + value);
 
     }
 
     public void increment(int integer) {
+        System.out.println("original value in the increment method: " + integer);
         integer++;
         System.out.println("incremented value: " + integer);
     }
